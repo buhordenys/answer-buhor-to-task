@@ -1,10 +1,10 @@
 import "./sidebar.scss"
 import React from 'react';
-import SharedIcon from "../shared/SharedIcon";
+import SharedIcon from "../shared/SharedIcon/SharedIcon";
 import logo3x from '../../assets/Logo@3x.svg';
 import search from '../../assets/Search@3x.svg';
 import picasso from '../../assets/picasso.jpg';
-import Dots from "../shared/Dots";
+import Dots from "../shared/Dots/Dots";
 
 const Sidebar = () => {
     const OnInput = () => {
@@ -42,7 +42,7 @@ const Sidebar = () => {
                         </div>
                     </div>
                 </div>
-                <div className="user-dots" onClick={() => alert("User dots")}>
+                <div className="user-dots" onClick={() => alert("User Dots")}>
                     <Dots/>
                 </div>
             </div>

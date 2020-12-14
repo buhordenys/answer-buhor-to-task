@@ -5,7 +5,7 @@ import tesla from '../../assets/nikola-tesla.jpg';
 import musk from '../../assets/musk.jpg';
 import chat from '../../assets/Combined Shape@1x.svg';
 import shapes from '../../assets/Shapes@2x.png';
-import Dots from "../shared/Dots";
+import Dots from "../shared/Dots/Dots";
 
 const Header = (props) => {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import "./sharedIcon.scss"
-import done from '../../assets/Icon@3x.svg';
-import chat from '../../assets/chat.png';
-import download from '../../assets/download.png';
+import done from '../../../assets/Icon@3x.svg';
+import chat from '../../../assets/chat.png';
+import download from '../../../assets/download.png';
 
 const SharedIcon = (props) => {
     const getIcon = () => {
