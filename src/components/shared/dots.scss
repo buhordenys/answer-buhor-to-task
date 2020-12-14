@@ -1,0 +1,13 @@
+.dots {
+  display: flex;
+
+  .dot {
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background: grey;
+  }
+  .dot:not(:first-child) {
+    margin-left: 2px;
+  }
+}

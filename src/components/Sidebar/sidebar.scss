@@ -1,0 +1,153 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  background-color: #000000;
+  color: #FFFFFF;
+
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 70px;
+  margin: 0 20px;
+
+  .sidebar-logo-name {
+    display: flex;
+    justify-content: space-around;
+    .sidebar-logo {
+      height: 18.9px;
+      margin: 0 15px 0 0;
+    }
+    .sidebar-name {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .search-button {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+  }
+  .search-button:hover input {
+    right: 0;
+  }
+
+  .input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    background-color: #000000;
+    border: none;
+    border-bottom: 1px solid #FFC200;
+    height: 24px;
+    margin-left: 55px;
+    right: -40%;
+    transition-property: bottom;
+    transition-duration: .7s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.3s;
+  }
+
+}
+
+.info-footer {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.sidebar-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background: #202020;
+  padding: 0 20px;
+
+  .user-dots {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .user-info:last-child {
+    font-size: 12px;
+    color: #9B9B9B;
+  }
+
+  .sidebar-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding-right: 10px;
+  }
+  .info-name {
+    font-size: 14px;
+  }
+}
+
+
+
+.statistic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+
+  .statistic-quantity {
+    margin-right: 20px;
+    .quantity {
+      font-size: 20px;
+    }
+  }
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 14px;
+  flex: 1;
+  line-height: 22px;
+
+  .menu {
+    margin: 10px auto 10px 20px;
+    cursor: pointer;
+  }
+  .sidebar-active {
+    font-size: 12px;
+    color: #878787;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .notifications {
+    display: flex;
+
+    .notifications-new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .number {
+      position: absolute;
+      z-index: 1;
+      font-size: 13px;
+      color: black;
+    }
+  }
+}
+
+

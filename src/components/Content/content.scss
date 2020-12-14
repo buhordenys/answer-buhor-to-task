@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #F7F6F3;
+
+  .content-tab {
+    display: flex;
+    flex-direction: column;
+    width: 710px;
+    height: 600px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 20px
+  }
+}
+
