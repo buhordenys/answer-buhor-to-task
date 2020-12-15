@@ -58,33 +58,9 @@
   }
 }
 
-.shared,
-.chat {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 30px;
-  margin: 0 0 0 15px;
-  padding: 0 15px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.shared {
-  background: #EAEAEA;
-  border-radius: 15px;
-  color: #131313;
-
-}
-.chat {
-  background: #FFF8DD;
-  border-radius: 15px;
-  color: #FFC200;
-
-  .combiner-chat {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-  }
+.combiner-chat {
+  width: 16px;
+  height: 16px;
 }
 
 .header-tabs{

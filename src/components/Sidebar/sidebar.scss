@@ -1,15 +1,17 @@
+$sidebar-color: #000000;
+$sidebar-color-text: #FFFFFF;
+
 .sidebar {
   display: flex;
   flex-direction: column;
   width: 270px;
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: $sidebar-color;
+  color: $sidebar-color-text;
 
 }
 
 .sidebar-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   height: 70px;
@@ -22,36 +24,39 @@
       height: 18.9px;
       margin: 0 15px 0 0;
     }
+  }
+
+  .sidebar-search {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
     .sidebar-name {
       font-size: 16px;
       line-height: 24px;
     }
-  }
-
-  .search-button {
-    height: 16px;
-    width: 16px;
-    cursor: pointer;
-  }
-  .search-button:hover input {
-    right: 0;
-  }
-
-  .input {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: absolute;
-    background-color: #000000;
-    border: none;
-    border-bottom: 1px solid #FFC200;
-    height: 24px;
-    margin-left: 55px;
-    right: -40%;
-    transition-property: bottom;
-    transition-duration: .7s;
-    transition-timing-function: ease-out;
-    transition-delay: 0.3s;
+    .search-button {
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
+    }
+    .input {
+      position: absolute;
+      right: 0;
+      background-color: $sidebar-color;
+      color: $sidebar-color-text;
+      border: none;
+      border-bottom: 1px solid #FFC200;
+      outline: none;
+      width: 0;
+      height: 24px;
+      padding: 1px 0;
+      transition-property: all;
+      transition-duration: .3s;
+      transition-timing-function: ease-out;
+      transition-delay: 0.3s;
+    }
   }
 
 }

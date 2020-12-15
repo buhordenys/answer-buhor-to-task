@@ -1,18 +1,22 @@
 import "./sidebar.scss"
 import React from 'react';
-import SharedIcon from "../shared/SharedIcon/SharedIcon";
+import SharedIcon from "../shared/SharedIcon";
 import logo3x from '../../assets/Logo@3x.svg';
 import search from '../../assets/Search@3x.svg';
 import picasso from '../../assets/picasso.jpg';
-import Dots from "../shared/Dots/Dots";
+import Dots from "../shared/Dots";
 
 const Sidebar = () => {
-    const OnInput = () => {
-        return (
-            /*<input type="text" className="input"/>*/
-            console.log('click')
-        )
+    const inputRef = React.useRef();
+
+    const onInput = () => {
+        if (inputRef.current === null) return;
+        inputRef.current.style.width = '100%';
+        inputRef.current.focus();
     };
+    const onBlur = (e) => {
+        e.currentTarget.style.width = '0px';
+    }
 
     return (
         <div className="sidebar">
@@ -21,13 +25,13 @@ const Sidebar = () => {
                     <div className="logo">
                         <img src={logo3x} alt='...' className="sidebar-logo"/>
                     </div>
+                </div>
+                <div className="sidebar-search">
                     <div className="sidebar-name">
                         PROJECTUS
                     </div>
-                </div>
-                <div className="sidebar-search" onClick={() => alert('Turn on Input')}>
-                    <input type="text" className="input"/>
-                    <img src={search} className="search-button" onClick={() => OnInput()}/>
+                    <input type="text" className="input" ref={inputRef} onBlur={onBlur}/>
+                    <img src={search} className="search-button" onClick={onInput}/>
                 </div>
             </div>
             <div className="sidebar-user">
@@ -77,8 +81,7 @@ const Sidebar = () => {
                 <div className="menu notifications" onClick={() => alert('In Notifications')}>
                     Notifications
                     <div className="notifications-new">
-                        <SharedIcon color="#FFC200" size="20px" classname="round-number"/>
-                        <p className="number">3</p>
+                        <SharedIcon color="#FFC200" size="20px" classname="round-number">3</SharedIcon>
                     </div>
                 </div>
             </div>

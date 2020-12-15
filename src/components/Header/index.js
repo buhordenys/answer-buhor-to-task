@@ -5,7 +5,8 @@ import tesla from '../../assets/nikola-tesla.jpg';
 import musk from '../../assets/musk.jpg';
 import chat from '../../assets/Combined Shape@1x.svg';
 import shapes from '../../assets/Shapes@2x.png';
-import Dots from "../shared/Dots/Dots";
+import Dots from '../shared/Dots';
+import Chip from "../shared/Chip";
 
 const Header = (props) => {
     return (
@@ -28,11 +29,22 @@ const Header = (props) => {
                         <img src={tesla} className="photo" alt=""/>
                         <img src={musk} className="photo" alt=""/>
                     </div>
-                        <div className="shared" onClick={() => alert('Shared to')}>Shared</div>
-                        <div className="chat" onClick={() => alert('In chat')}>
-                            <img src={chat} alt="." className="combiner-chat"/>
-                            Chat
-                        </div>
+                    <Chip
+                        onClick={() => alert('Shared to')}
+                        backgroundColor="#EAEAEA"
+                        color="#131313"
+                    >
+                        Shared
+                    </Chip>
+                    <Chip
+                        onClick={() => alert('In chat')}
+                        backgroundColor="#FFF8DD"
+                        color="#FFC200"
+                    >
+                        <img src={chat} alt="." className="combiner-chat"/>,
+                        Chat
+                    </Chip>
+
                 </div>
             </div>
             <div className="header-tabs">
