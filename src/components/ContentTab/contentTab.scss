@@ -16,19 +16,19 @@
   }
 
   .mark {
-    width: 65px;
+    width: 8%;
     margin: 0 auto 15px 10px;
     opacity: 0.5;
     font-size: 14px;
   }
   .text {
-    width: 430px;
+    width: 70%;
     margin: 0 auto 15px 20px;
     font-size: 16px;
     line-height: 20px;
   }
   .time {
-    width: 65px;
+    width: 8%;
     height: 20px;
     margin: 0 15px 15px auto;
     opacity: 0.7;
@@ -37,15 +37,15 @@
     line-height: 20px;
   }
   .answer {
-    width: 500px;
+    width: 73%;
     border-radius: 7px;
     background-color: #F7F6F3;
     padding: 25px;
-    margin: 0 auto 15px 70px;
+    margin: 0 auto 15px 60px;
     font-size: 15px;
   }
   .answer-img {
-    width: 500px;
+    width: 65%;
     border-radius: 7px;
     margin: 0 auto 15px 70px;
 
@@ -53,11 +53,11 @@
       width: 100px;
       height: 100px;
       border-radius: 8px;
-      margin: 0 auto 0 0;
+      margin: 0 10px 0 0;
     }
-    .img:not(:first-child) {
+    /*.img:not(:first-child) {
       margin-left: 10px;
-    }
+    }*/
   }
 }
 

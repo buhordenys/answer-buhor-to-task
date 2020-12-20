@@ -2,4 +2,20 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: calc(100% - 270px);
+  margin-left: 270px;
+}
+
+@media (max-width: 992px) {
+  .page-wrapper {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-wrapper {
+    width: 100%;
+    margin: auto;
+  }
 }

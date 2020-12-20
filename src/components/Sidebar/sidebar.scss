@@ -4,6 +4,10 @@ $sidebar-color-text: #FFFFFF;
 .sidebar {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 270px;
   background-color: $sidebar-color;
   color: $sidebar-color-text;
@@ -30,6 +34,7 @@ $sidebar-color-text: #FFFFFF;
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 1;
 
     .sidebar-name {
@@ -141,18 +146,87 @@ $sidebar-color-text: #FFFFFF;
     display: flex;
 
     .notifications-new {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-left: 10px;
-    }
-    .number {
-      position: absolute;
-      z-index: 1;
-      font-size: 13px;
-      color: black;
     }
   }
 }
 
+@media (max-width: 992px) {
+  .sidebar {
+    width: 200px;
+  }
+}
 
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+  }
+
+  .sidebar-name {
+    margin-right: 8px;
+  }
+
+  .user-dots {
+    margin-left: 10px;
+  }
+
+  .sidebar-header {
+    margin: 0 10px;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    align-items: center;
+
+    .sidebar-active {
+      font-size: 14px;
+    }
+
+      .menu {
+      margin: 5px auto 5px 10px;
+    }
+  }
+}
+
+@media (max-width: 422px) {
+  .sidebar {
+    .sidebar-header {
+      margin: 10px;
+      width: 100%;
+      height: 40px;
+    }
+
+    .sidebar-user {
+      width: 100%
+    }
+
+    .statistic {
+      height: 40px;
+      padding: 0 10px;
+
+      .statistic-quantity {
+        margin-right: 10px;
+        .quantity {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .sidebar-menu {
+      font-size: 12px;
+
+      .sidebar-active {
+        font-size: 12px;
+      }
+    }
+
+  }
+}

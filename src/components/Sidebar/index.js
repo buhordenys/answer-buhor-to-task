@@ -31,7 +31,7 @@ const Sidebar = () => {
                         PROJECTUS
                     </div>
                     <input type="text" className="input" ref={inputRef} onBlur={onBlur}/>
-                    <img src={search} className="search-button" onClick={onInput}/>
+                    <img src={search} className="search-button" alt="" onClick={onInput}/>
                 </div>
             </div>
             <div className="sidebar-user">

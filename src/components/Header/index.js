@@ -3,6 +3,7 @@ import React from 'react';
 import enshteine from '../../assets/enshteine.jpg';
 import tesla from '../../assets/nikola-tesla.jpg';
 import musk from '../../assets/musk.jpg';
+import share from '../../assets/share.png';
 import chat from '../../assets/Combined Shape@1x.svg';
 import shapes from '../../assets/Shapes@2x.png';
 import Dots from '../shared/Dots';
@@ -12,7 +13,7 @@ const Header = (props) => {
     return (
         <div className="header">
             <div className="header-top">
-                <div className="header-inside1">
+                <div className="header-inside1 width1">
                     <div>
                         <img src={shapes} className="shapes" alt=""/>
                     </div>
@@ -23,7 +24,7 @@ const Header = (props) => {
                         <Dots/>
                     </div>
                 </div>
-                <div className="header-inside1">
+                <div className="header-inside1 width2">
                     <div className="photos">
                         <img src={enshteine} className="photo" alt=""/>
                         <img src={tesla} className="photo" alt=""/>
@@ -34,15 +35,16 @@ const Header = (props) => {
                         backgroundColor="#EAEAEA"
                         color="#131313"
                     >
-                        Shared
+                        <p className='header-chip'>Share</p>
+                        <img src={share} className="share-icon" alt=""/>
                     </Chip>
                     <Chip
                         onClick={() => alert('In chat')}
                         backgroundColor="#FFF8DD"
                         color="#FFC200"
                     >
-                        <img src={chat} alt="." className="combiner-chat"/>,
-                        Chat
+                        <img src={chat} className="combiner-chat" alt=""/>,
+                        <p className="header-chip">Chat</p>
                     </Chip>
 
                 </div>

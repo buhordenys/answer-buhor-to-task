@@ -17,3 +17,24 @@
   }
 }
 
+@media (max-width: 1055px) {
+  .content {
+    .content-tab {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 15px 0;
+
+    .content-tab {
+      width: 95%;
+      height: auto;
+      padding: 10px
+    }
+
+  }
+}

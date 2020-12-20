@@ -2,3 +2,9 @@
   display: flex;
   height: 100%;
 }
+
+@media (max-width: 900px) {
+  .app-wrapper {
+    flex-direction: column;
+  }
+}
