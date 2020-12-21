@@ -81,7 +81,7 @@ const Sidebar = () => {
                 <div className="menu notifications" onClick={() => alert('In Notifications')}>
                     Notifications
                     <div className="notifications-new">
-                        <SharedIcon color="#FFC200" size="20px" classname="round-number">3</SharedIcon>
+                        <SharedIcon className="round-number">3</SharedIcon>
                     </div>
                 </div>
             </div>

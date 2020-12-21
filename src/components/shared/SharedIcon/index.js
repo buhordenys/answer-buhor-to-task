@@ -5,22 +5,20 @@ import PropTypes from "prop-types";
 
 const propType = {
     color: PropType.string,
-    size: PropType.string,
     children: PropType.oneOfType([PropTypes.node, PropTypes.arrayOf(PropTypes.node)]).isRequired,
+    className: PropType.string,
 };
 const defaultProps = {
     color: '',
-    size: '',
+    className: '',
 };
 
 const SharedIcon = (props) => {
     return (
         <div
-            className="shared-icon"
+            className={`${props.className} shared-icon`}
             style={{
                 backgroundColor:props.color,
-                width:props.size,
-                height:props.size
             }}>
             {props.children}
         </div>

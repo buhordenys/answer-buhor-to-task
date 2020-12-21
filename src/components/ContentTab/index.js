@@ -18,14 +18,14 @@ const ContentTab = () => {
              </div>
          </div>
          <div className="activity-tasks">
-             <SharedIcon color="#CEF9C6" size="40px">
+             <SharedIcon color="#CEF9C6" className="round-content-mob">
                  <img src={done} alt="" className="icon-in-round"/>
              </SharedIcon>
              <div className="text">Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users</div>
              <div className="time">8:40 PM</div>
          </div>
          <div className="activity-tasks">
-             <SharedIcon color="#FFF8DD" size="40px">
+             <SharedIcon color="#FFF8DD" className="round-content-mob">
                  <img src={chat} alt="" className="icon-in-round"/>
              </SharedIcon>
              <div className="text">Emilee Simchenko commented on Account for teams and personal in bottom style</div>
@@ -33,7 +33,7 @@ const ContentTab = () => {
              <div className="answer">During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes</div>
          </div>
          <div className="activity-tasks">
-             <SharedIcon color="#E3EFFF" size="40px">
+             <SharedIcon color="#E3EFFF" className="round-content-mob">
                  <img src={download} alt="" className="icon-in-round"/>
              </SharedIcon>
              <div className="text">Darika Samak uploaded 4 files on An option to search in current projects or in all projects</div>
