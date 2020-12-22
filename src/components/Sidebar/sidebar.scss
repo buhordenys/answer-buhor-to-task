@@ -18,8 +18,9 @@ $sidebar-color-text: #FFFFFF;
   display: flex;
   align-items: center;
   overflow: hidden;
-  height: 70px;
+  height: 84px;
   margin: 0 20px;
+  padding-left: 10px;
 
   .sidebar-logo-name {
     display: flex;
@@ -34,7 +35,7 @@ $sidebar-color-text: #FFFFFF;
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex: 1;
 
     .sidebar-name {
@@ -77,7 +78,7 @@ $sidebar-color-text: #FFFFFF;
   align-items: center;
   height: 80px;
   background: #202020;
-  padding: 0 20px;
+  padding: 0 20px 0 30px;
 
   .user-dots {
     display: flex;
@@ -99,24 +100,22 @@ $sidebar-color-text: #FFFFFF;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    padding-right: 10px;
+    padding-right: 15px;
   }
   .info-name {
     font-size: 14px;
+    margin-bottom: 2px;
   }
 }
-
-
 
 .statistic {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 80px;
-  padding: 0 20px;
+  padding: 20px 20px 20px 30px;
 
   .statistic-quantity {
-    margin-right: 20px;
+    margin-right: 19px;
     .quantity {
       font-size: 20px;
     }
@@ -128,15 +127,17 @@ $sidebar-color-text: #FFFFFF;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 0 20px 0 30px;
   font-size: 14px;
   flex: 1;
   line-height: 22px;
 
   .menu {
-    margin: 10px auto 10px 20px;
+    margin-bottom: 16px;
     cursor: pointer;
   }
   .sidebar-active {
+    margin-bottom: 18.6px;
     font-size: 12px;
     color: #878787;
     line-height: 18px;
@@ -153,7 +154,7 @@ $sidebar-color-text: #FFFFFF;
     }
 
     .notifications-new {
-      margin-left: 10px;
+      margin-left: 9.3px;
     }
   }
 }
@@ -229,6 +230,7 @@ $sidebar-color-text: #FFFFFF;
 
     .sidebar-menu {
       font-size: 12px;
+      padding: 0 10px 0 15px;
 
       .sidebar-active {
         font-size: 12px;

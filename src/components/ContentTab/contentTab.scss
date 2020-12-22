@@ -9,7 +9,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-top: 20px;
+  margin: 0 auto 30px 0;
+
 
   .icon-in-round {
     width: 12px;
@@ -17,37 +18,37 @@
 
   .mark {
     width: 8%;
-    margin: 0 auto 15px 10px;
+    margin: 0 auto 2px 0;
     opacity: 0.5;
     font-size: 14px;
   }
   .text {
-    width: 70%;
-    margin: 0 auto 15px 20px;
+    width: 64%;
     font-size: 16px;
     line-height: 20px;
+    margin-left: 20px;
   }
   .time {
     width: 8%;
     height: 20px;
-    margin: 0 15px 15px auto;
+    margin: 0 0 15px auto;
     opacity: 0.7;
     font-size: 14px;
     text-align: right;
     line-height: 20px;
   }
   .answer {
-    width: 73%;
+    width: 77%;
     border-radius: 7px;
     background-color: #F7F6F3;
-    padding: 25px;
-    margin: 0 auto 15px 60px;
+    padding: 20px 30px;
+    margin: 20px 8.5% 0 8.5%;
     font-size: 15px;
   }
   .answer-img {
     width: 65%;
     border-radius: 7px;
-    margin: 0 auto 15px 70px;
+    margin: 20px auto 15px 70px;
 
     .img {
       width: 100px;

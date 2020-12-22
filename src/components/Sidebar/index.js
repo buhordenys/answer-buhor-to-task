@@ -41,7 +41,7 @@ const Sidebar = () => {
                         <div className="info-name">
                             Pablo Ruiz Picasso
                         </div>
-                        <div className="info-position info-footer">
+                        <div className="info-footer">
                             Product Owner
                         </div>
                     </div>
